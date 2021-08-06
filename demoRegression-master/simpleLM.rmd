@@ -38,10 +38,10 @@ I'm going to try to find the model length of the bear based on chest size.
 
 
 ```{r}
-myheadlen<- lm(LENGTH~CHEST,data=bears)
+mychest<- lm(LENGTH~CHEST,data=bears)
 plot(LENGTH~CHEST,data=bears)
-abline(myheadlen)
-summary.lm(myheadlen)
+abline(mychest)
+summary.lm(mychest)
 ```
   
 I have two models simp and mycehst, it appears the second model (mycehst) looks better than the first model(simp) because it explains the error more and the residual standard error is smaller. The first model was using neck, the adjusted r square was 0.747 and the residual standard error was 5.376. In the second model it was using the adjusted r square 0.786 and the residual standard error is 4.939.    
